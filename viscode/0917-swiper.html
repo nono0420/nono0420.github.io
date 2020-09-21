@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<!-- Demo styles -->
+<style>
+    html,
+    body {
+      position: relative;
+      height: 800px;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      color:ghostwhite; 
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 1000px;
+      height:550px;
+      margin:100px auto; 
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 100px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      
+      
+    }
+    
+.box1{
+    background-image: url(https://i.epochtimes.com/assets/uploads/2019/12/pets-3715733_1280-600x400.jpg);
+    background-size: cover;
+    }
+.box2{
+    background-image: url(https://storage.googleapis.com/www-cw-com-tw/article/202002/article-5e4ce28d030c5.jpg);
+    background-size: cover;
+}
+
+
+.box3{
+    background-image: url(https://www.sciencenews.org/wp-content/uploads/2019/10/110919_review_feat.jpg);
+   background-size: cover;
+}
+
+.box4{
+    background-image: url(https://atlantahumane.org/wp-content/uploads/2020/06/Adopt-a-Dog-Page-Header-Image.jpg);
+    background-size: cover;
+}
+.box5{
+    background-image: url(https://vetmed.illinois.edu/wp-content/uploads/2020/03/pc-covid19-faqs.jpg);
+   background-size: cover;
+}
+.box6{
+    background-image: url(https://policygenius-blog.imgix.net/2016/02/feat-dog-nose.jpg);
+}
+
+
+</style>
+<body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide box1">汪</div>
+      <div class="swiper-slide box2">汪汪</div>
+      <div class="swiper-slide box3">汪汪汪</div>
+      <div class="swiper-slide box4">汪汪汪汪</div>
+      <div class="swiper-slide box5">汪汪汪汪汪</div>
+      <div class="swiper-slide box6">Slide 6</div>
+     
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    
+
+  </script>
+</body>
+</html>
