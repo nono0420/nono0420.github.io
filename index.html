@@ -4,104 +4,1135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-</head>
-<style>
+    <style>
 
-body{
-    margin:0;
+#GotoTop {
+  width: 30px;
+  height: 40px;
+  background-color:unset;
+  /* border: 1px solid #BF8566; */
+  border-radius: 30%;
+  position: fixed;
+  right: 6px;
+  bottom: 13px;
+  z-index: 90;
+
+
+  background-image: url(../素材/top-01.png);
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+  }
+
+       
+
+#GotoTop:hover {
+width: 50px;
+height: 60px;
+transition: 0.8s;
 }
 
-.banner{
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+
+.nav {
     width: 100%;
-    height: 700px;
-    background-color: beige;
-}
-
-.navbar{
-    width: 100%;
-    height: 70px;
-}
-.navbar{
-    background-color: rgb(247, 243, 240);
-}
-
-.nav-link{
-    width: 150px;
-    height: 52px;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
     text-align: center;
-    line-height: 2;
-    color: white;
-   
-   
-    margin-left: 50px;
-    /* border-radius:30% 52% 40% 39%; */
+    z-index: 99;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left:5rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color:grey;
+    font-size: 2.5rem;
     
-    
 }
-.nav-link:hover{
-    /* border-radius:30% 52% 40% 39%; */
-    /* background-color:rgb(223, 221, 221); */
-    border-bottom: 1px solid blueviolet;
- }
-.about{
+
+/* 放logo照片 */
+
+@media (max-width: 376px)
+{
+    .nav div.logo a{
+        font-size: 1.4rem;
+    }    
+}
+.nav div.logo a:hover {
+    color: #BF8566;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
     width: 100%;
-    height: 580px;
-    background-color: coral;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.menu{
-    width: 100%;
-    height: 2000px;
-    background-color:cornsilk;
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
 }
-.about-text{
-    width: 300px;
-    height: 300px;
-    background-color: cornsilk;
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color:grey;
+    line-height: 65px;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+   padding-right: 1.6rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #BF8566;
+   
+}
+
+
+/* Home section */
+
+/* .home {
+    width: 50%;
+    height: 60%;
+    background-image: url(/素材/主頁照片2-01.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.banner-picture{
+    width: 50%;
+    height: 50%;
+    background-image: url(../素材/主頁照片3-01.png);
+    background-color: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: auto;
+    padding-top: 29%;
+    
 }
-</style>
+
+@media (max-width: 768px)
+{
+    .banner-picture{
+        width: 100%;
+        padding-top: 40%;
+    }
+}
+@media (max-width: 376px)
+{
+    .banner-picture{
+        padding-top:6%;
+    }
+}
+.height{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+
+.welcome{
+    width: 80px;
+    height: 300px;
+    background-image: url(../素材/主頁字體1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -33%;
+    margin-left: 250px;
+}
+
+@media (max-width: 768px)
+{
+    .welcome{
+        margin-top: -70%;
+        margin-left: 10%;
+    }
+}
+@media (max-width: 415px)
+{
+    .welcome{
+        width: 40px;
+        height: 220px;
+        margin-top: -10%;
+        margin-left: 15%;
+    }
+}
+@media (max-width: 376px)
+{
+    .welcome{
+        width: 40px;
+        height: 220px;
+        margin-top: -2%;
+        margin-left: 15%;
+    }
+}
+/* .fly{
+    width: 100px;
+    height: 100px;
+    background-image: url(/素材/蜻蜓.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    margin-top: -40%;
+  
+}
+@media (max-width: 768px)
+{
+    .fly{
+        margin-top: -85%;   
+       
+        width: 40px;
+        height: 40px;
+    } 
+} */
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color:rgb(255, 255, 255,0.9);
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #D3CDC0;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: rgb(255, 255, 255,0.8);
+}
+
+
+.myH2 {
+	text-align:center;
+	font-size: 4rem;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
+
+
+.aboutme{
+    width: 100%;
+    height: 1350px;
+    background-color: white;
+}
+@media (max-width: 415px){
+   .aboutme{
+       height: 770px;
+   }
+}
+@media (max-width: 376px){
+   .aboutme{
+       height: 790px;
+   }
+}
+.about-title{
+    width: 220px;
+    height: 100px;
+    background-color: white;
+    margin: auto;
+    font-size:16px;
+    letter-spacing: 0.8rem;
+    color: #604C3F;
+    padding-top: 10rem;
+}
+@media (max-width: 415px){
+    .about-title{
+      font-size: 12px;
+      padding-top: 10px;
+      line-height: -50;
+    }
+}
+
+@media (max-width: 376px){
+    .about-title{
+      font-size: 11px;
+      padding-bottom: 20px;
+      line-height: -50;
+    }
+}
+
+.about-picture{
+    width: 33%;
+    height: 35%;
+    margin: auto;
+    padding-top: 15%;
+    background-color: unset;
+    background-image: url(../素材/站著照片.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}      
+@media (max-width: 768px){
+    .about-picture{
+        width: 50%;
+    }
+}
+@media (max-width: 415px){
+    .about-picture{
+        width: 70%;
+        height: 30%;
+        margin-top: 12%;
+        margin-bottom: 15%;
+       
+    }
+}
+
+@media (max-width: 375px){
+    .about-picture{
+        width: 56%;
+        height: 15%;
+    }
+}
+.speciatly{
+    width: 60%;
+    height: 130px;
+    font-size: 14px;
+    letter-spacing: 0.5rem;
+    margin-left: 33%;
+    /* padding-top: 20px; */
+    color: #40210F;   
+    /* 專長 */
+}
+.spe-box{
+    width:50%;
+    height: 100%;
+    background-color: unset;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 4.5;
+    text-align: center;
+    
+}
+.box1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow:5px 5px 5px #E5B768;
+    background-color: #dfb692; 
+    border: 1px solid #738A85;
+}
+@media (max-width: 768px){
+    .speciatly{
+    margin-left: 190px;
+    font-size: 12px;
+    }
+    .spe-box{
+    width:60%;
+    height: 60%;
+    }
+    .box1{ 
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    letter-spacing:0;
+    line-height: 4;
+
+    }
+}
+@media (max-width: 415px){
+    .speciatly{
+    margin: auto;
+    margin-top: 20px;
+    }
+    .spe-box{
+    width:100%;
+    height: 50%;
+    }
+    .box1{ 
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+    letter-spacing:0;
+    line-height: 3.2;
+    }
+}
+
+@media (max-width: 376px){
+    .speciatly{
+    margin: auto;
+    margin-top: 20px;
+    }
+    .spe-box{
+    width:100%;
+    height: 50%;
+    }
+    .box1{ 
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+    letter-spacing:0;
+    line-height: 3.2;
+    }
+
+}
+
+
+
+.favorite{
+    width: 60%;
+    height: 150px;
+    /* margin-top: 30px; */
+    font-size: 14px;
+    letter-spacing: 0.5rem;
+    margin-left: 33%;
+    padding-top: 30px;
+    color: #40210F;
+}
+.fav-box{
+    width:50%;
+    height: 100%;
+    background-color: unset;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 4.5;
+    text-align: center;
+    
+}
+.box2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow:5px 5px 5px #E5B768;
+    background-color: #dfb692; 
+    border: 1px solid #738A85;
+}
+@media (max-width: 768px){
+    .favorite{
+    margin-left: 190px;
+    }
+    .fav-box{
+    width:60%;
+    height: 60%;
+    }
+    .box2{ 
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    letter-spacing:0;
+    line-height: 4;
+   
+    }
+}
+@media (max-width: 415px){
+    .favorite{
+    margin: auto;
+    margin-top: -50px;
+    font-size: 12px; 
+    /* box-shadow: 1px 1px 1px #E5B768; */
+    }
+    .fav-box{
+    width:100%;
+    height: 50%;
+    }
+    .box2{ 
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+    letter-spacing:0;
+    line-height: 3.2;
+    }
+}
+
+@media (max-width: 376px){
+    .favorite{
+    margin: auto;
+    margin-top: -33px;
+    }
+    .fav-box{
+    width:100%;
+    height: 50%;
+    }
+    .box2{ 
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+    letter-spacing:0;
+    line-height: 3.2;
+    }
+
+}
+.drawing{
+  background-image: url(../素材/畫畫.png);
+  background-size: contain;
+  line-height: 13;
+  letter-spacing: 1.5px;
+  color: #738A85;
+}
+@media (max-width: 415px){
+    .drawing{
+        line-height: 10;  
+        letter-spacing: 0.2px;
+    } 
+}
+.movie{
+  background-image: url(../素材/看電影.png);
+  background-size:70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 13;
+  letter-spacing: 1.5px;
+  color: #738A85;
+}  
+@media (max-width: 415px){
+    .movie{
+        line-height: 10;  
+        letter-spacing: 0.2px;
+    } 
+}
+.eatting{
+  background-image: url(../素材/雞腿.png);
+  background-size:70%;
+  background-position:center;
+  background-repeat:no-repeat;
+  line-height: 13;
+  letter-spacing: 1.5px;
+  color: #738A85; 
+}
+@media (max-width: 415px){
+    .eatting{
+        line-height: 10;  
+        letter-spacing: 0.2px;
+    } 
+}
+.swimming{
+  background-image: url(../素材/游泳.png);
+  background-size:contain;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  line-height: 13;
+  letter-spacing: 1.5px;
+  color: #738A85;  
+}
+@media (max-width: 415px){
+    .swimming{
+        line-height: 10;  
+        letter-spacing: 0.2px;
+    } 
+}
+.box1:hover{
+    background-color: #E5B768;
+}
+.box2:hover{
+    background-color: #C1D4CE;
+}
+.experence{
+    width: 100%;
+    height: 470px;
+    background-color:#EAE7E4;
+}
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 350px;
+      height: 350px;
+      border: 3px solid #B4A388;
+      border-radius: 10px;
+
+    }
+
+    :root {
+    --swiper-theme-color: white;
+    }
+
+
+
+.aboutme2{
+    width: 100%;
+    height: 1100px;
+    background-color: white;
+}
+@media (max-width: 415px){
+    .aboutme2{
+        width: 100%;
+        height: 980px; 
+    }
+}
+
+.about-picture2{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+   margin-top: 100px;
+    background-color: unset;
+    background-image: url(../素材/坐著照片.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media (max-width: 768px){
+    .about-picture2{
+        width: 60%;
+        height: 20%;
+        margin-top: 10%;
+    }
+}
+@media (max-width: 415px){
+    .about-picture2{
+        width: 48%;
+        height: 30%;
+        padding-top: unset;
+        margin-top:50px;
+       
+    }
+}
+
+@media (max-width: 376px){
+    .about-picture2{
+        height: 20%;
+        margin-top:50px;
+       
+    }
+}
+.aboutme2-text-bag{
+    width:50%;
+    height: 600px;
+    /* background-color:#dfb692; */
+    border-radius: 10px;
+    border: 3px solid #dfb692;
+    margin: auto;
+    margin-top: 80px;
+   
+}
+@media (max-width: 768px){
+    .aboutme2-text-bag{
+      width:85%;
+      height: 520px;
+}
+}
+
+@media (max-width: 415px){
+    .aboutme2-text-bag{
+      width:92%;
+      height: 650px;
+      margin-top: -15px;
+}
+}
+
+@media (max-width: 376px){
+    .aboutme2-text-bag{
+      width:92%;
+      margin-top: 10px;
+      height: 700px;
+}
+}
+.aboutme2-text{
+    width:80%;
+    height: 90%;
+    margin: auto;
+    /* background-color: violet; */
+    text-align: center;
+    color: rgb(49, 43, 43);
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 2;
+}
+@media (max-width: 768px){
+    .aboutme2-text{
+    width:80%;
+    height: 90%;
+    font-size: 8px;
+    line-height: 2;
+
+}
+}
+.portfolio-bag{
+    width: 100%;
+    height: 1000px;
+    background-color:white;
+
+}
+.portfolio-text{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #604C3F;
+    margin: auto;
+    margin-top: 100px;
+}
+@media (max-width: 415px){
+    .portfolio-text{
+        font-size: 14px;
+        margin-top: 30px;
+}
+}
+@media (max-width: 376px){
+    .portfolio-text{
+        font-size: 14px;
+        margin-top: 20px;
+}
+}
+
+
+     </style>
+     </head>
+
+
 <body>
-    
-    <div class="banner">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+    <a href="#">
+        <div id="GotoTop"></div>
+      </a>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#">關於我們</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">美味菜單</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">最新消息</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">聯絡我們</a>
-                  </li>
-              </ul>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">YU NONG，LEE</a>
+                
             </div>
-          </nav>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Issuu</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="height">
+        <div class="banner-picture"></div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="welcome"></div>
+        <div class="fly"></div>
+        <!-- just to make scrolling effect possible -->
+			
+				<p class="myP">
+				
+			</p>
     </div>
-    <div class="about">
-        <div class="about-text"></div>
+
+    <div class="aboutme">
+       <div class="about-title"><h6>ABOUT / 關於我</h6></div>
+       <div data-aos="fade-up" class="about-picture"></div>
+       <div class="speciatly">專長
+        <div data-aos="fade-up" class="spe-box">
+             <div class="box1 ai">AI</div>
+             <div class="box1 ps">PS</div>
+             <div class="box1 css">CSS</div>
+             <div class="box1 html">HTML</div>
+            </div>
+       </div>
+
+       <div class="favorite">興趣
+        <div data-aos="fade-up" class="fav-box">
+               <div class="box2 drawing">drawing</div>
+               <div class="box2 movie">movie</div>
+               <div class="box2 eatting">eating</div>
+               <div class="box2 swimming">swimming</div>
+           </div>
+       </div>
     </div>
-    <div class="menu"></div>
+
+    <div class="experence">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(../素材/經歷1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(../素材/經歷2.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(../素材/經歷3-01.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(../素材/經歷4-01.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(../素材/經歷5-01.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(../素材/經歷6-01.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(../素材/經歷7-01.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(../素材/經歷8-01.jpg)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
+    <div class="aboutme2">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" class="about-picture2"></div>
+        <div data-aos="flip-up" class="aboutme2-text-bag">
+        <div class="aboutme2-text">
+             <h3>各位好，我是李昱儂</h3>
+
+        畢業於大葉大學造形藝術學系
+        ，在學期間累積不少繪畫創作，媒材以壓克力、水彩為主。大三大四期間共參與了
+        兩次校外展、一次雙個展，與七次的校內展。在每次的佈展和評圖中學習成長，和同
+        學間的團隊合作也是非常重要的。也曾加入攝影社， 學會了許多攝影技巧與光線運用，
+        在攝影上收穫良多。 因熱愛繪圖創作，大一時自學繪圖軟體，上架了第一組自己的貼圖，
+        後來也持續不斷創作，目前共有13組貼圖上架中。<p></p> 
         
-    
+        目前做過兩份工作，皆為餐廳工讀生，在這兩三年內學習到面對客人應有的態度與耐心，
+        在忙碌時段應如何分配工作與互相分工。與同事間的相處之道也是非常重要的。
+        <P></P>
+        2019年在高中老師推薦下，和南投老騎士咖啡店老闆合作，創作南投配天宮
+        神明貼圖，當時還有請記者來採訪，非常緊張! 之後還有合作旅遊地圖角色設計，
+        是一個非常棒的經驗。
+        <P></P>
+        為了增進自己能力，畢業之後到台中職訓局學習專業的Photoshop與Illustrator軟體，
+        也學會了CSS與HTML程式語言，目前也還在不斷的自我學習中，讓自己能成為更專業的
+        設計師與工程師。
+        我是一個勇於嘗試新事物與具有耐心的人，
+        若有幸能為貴公司服務，我將會盡我所能努力做到最好，
+        <p></p>謝謝各位 !
+        </div>
+        </div>
+    </div>
+
+    <div class="portfolio-bag">
+        <div class="portfolio-text">MY PORTFOLIO</div>
+        
+     
+    </div>
 
 
 
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+        $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init(); 
+    ////////需加入的網址和aos///////////  ////Google搜尋 AOS////       
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
 </body>
 </html>

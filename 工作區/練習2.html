@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .portfolio-menu {
+    text-align: center;
+    margin: 30px auto;
+   
+}
+
+.portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    border: 1px solid#E5B768;
+    color:  rgb(49, 43, 43);
+    cursor: pointer;
+    transition: all .5 ease;
+}
+@media screen and (max-width: 415px) {
+    .portfolio-menu ul li{
+        font-size: 10px;
+}
+}
+
+.portfolio-menu ul {
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-menu ul li:hover {
+    background: #E5B768;
+    color: #fff;
+}
+
+.portfolio-menu ul li.active {
+    background:  #E5B768;
+    color: #fff;
+}
+
+.portfolio-item {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.portfolio-item .item {
+    width: 33.3%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.portfolio-item .item div {
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio-item .item {
+    width: 50%;
+    padding:0 15px;
+}
+}
+
+@media screen and (max-width: 640px) {
+  .portfolio-item .item {
+    width: 100%;
+}
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div class="container text-center">
+  <div class="portfolio-menu">
+      <ul>
+        <li class="active" data-filter="*">全部</li>
+        <li data-filter=".web">壓克力/油畫</li>
+        <li data-filter=".seo">水彩/日常手繪</li>
+        <li data-filter=".graphics">手作/其他</li>
+      </ul>
+  </div>
+</div>
+<div class="portfolio-item">
+  <div class="item web">
+      <div style="background-image: url(../素材/壓克力1.jpg);"></div>
+  </div>
+  <div class="item web">
+      <div style="background-image: url(../素材/壓克力2.jpg);"></div>
+  </div>
+  <div class="item web">
+    <div style="background-image: url(../素材/壓克力7.jpg);"></div>
+</div>
+<div class="item web">
+    <div style="background-image: url(../素材/壓克力8.jpg);"></div>
+</div>
+<div class="item web">
+    <div style="background-image: url(../素材/壓克力9.jpg);"></div>
+</div>
+<div class="item web">
+    <div style="background-image: url(../素材/壓克力4.jpg);"></div>
+</div>
+<div class="item web">
+    <div style="background-image: url(../素材/壓克力5.jpg);"></div>
+</div>
+<div class="item web">
+    <div style="background-image: url(../素材/壓克力3.jpg);"></div>
+</div>
+<div class="item web">
+    <div style="background-image: url(../素材/壓克力6.jpg);"></div>
+</div>
+
+
+  <div class="item seo">
+      <div style="background-image: url(../素材/水彩1.jpg);"></div>
+  </div>
+  <div class="item seo">
+      <div style="background-image: url(../素材/水彩2.jpg);"></div>
+  </div>
+  <div class="item seo">
+      <div style="background-image: url(../素材/水彩3.jpg);"></div>
+  </div>
+  <div class="item seo">
+    <div style="background-image: url(../素材/水彩10.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩8.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩6.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩7.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩5.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩9.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩15.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩13.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩11.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩12.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩16.jpg);"></div>
+</div>
+<div class="item seo">
+    <div style="background-image: url(../素材/水彩14.jpg);"></div>
+</div>
+
+
+
+
+  <div class="item graphics">
+      <div style="background-image: url(../素材/其他3.jpg);"></div>
+  </div>
+  <div class="item graphics">
+    <div style="background-image: url(../素材/其他5.jpg);"></div>
+</div>
+<div class="item graphics">
+    <div style="background-image: url(../素材/其他6.jpg);"></div>
+</div>
+<div class="item graphics">
+    <div style="background-image: url(../素材/其他4.jpg);"></div>
+</div>
+<div class="item graphics">
+    <div style="background-image: url(../素材/其他7.jpg);"></div>
+</div>
+<div class="item graphics">
+    <div style="background-image: url(../素材/其他8.jpg);"></div>
+</div>
+<div class="item graphics">
+    <div style="background-image: url(../素材/其他9.jpg);"></div>
+</div>
+<div class="item graphics">
+    <div style="background-image: url(../素材/其他1.jpg);"></div>
+</div>
+<div class="item graphics">
+    <div style="background-image: url(../素材/其他2.jpg);"></div>
+</div>
+  
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script>
+    $(document).ready(function(){
+  $('.portfolio-item').isotope(function(){
+      itemSelector:'.item'
+    });
+
+
+
+  $('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeClass('active');
+    $(this).addClass('active');
+
+
+    var selector = $(this).attr('data-filter');
+      $('.portfolio-item').isotope({
+        filter: selector
+      })
+      return false;
+  });
+});
+</script>
+</body>
+</html>
