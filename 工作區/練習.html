@@ -7,69 +7,37 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
 <style>
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: brown;
+}
+#bad{
+  width: 100%;
+  height: 500px;
+  background-color: burlywood;
+}
+#Goto{
+  width: 250px;
+  height: 65px;
+  background-color: cornsilk;
 
-body {
-      background: #fff;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-
-    }
+}
 
 </style>
 
 
 </head>
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(../素材/主頁照片2-01.png)"></div>
-          <div class="swiper-slide" style="background-image:url(../素材/主頁照片3-01.png)"></div>
-          <div class="swiper-slide" style="background-image:url(../素材/主頁照片2-01.png)"></div>
-          <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./images/nature-6.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./images/nature-7.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./images/nature-8.jpg)"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
+  <div id="bad"><div id="Goto">
+  <a href="https://issuu.com/nono0420/docs/_____6">連結</a>
+    </div>
+  
+</div>
 
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-      </script>
+    
 </body>
 </html>
